@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Book | Довідник</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="logo">White Book</div>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Пошук фактів...">
+            <select id="categoryFilter">
+                <option value="all">Всі категорії</option>
+            </select>
+        </div>
+        <button id="themeToggle" class="icon-btn">🌓</button>
+        <div class="menu-trigger">☰</div>
+    </header>
+
+    <div class="overlay" id="overlay"></div>
+    <nav id="sidebar" class="sidebar"></nav>
+
+    <main id="content-grid"></main>
+
+    <button id="backToTop" class="hidden">↑</button>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
